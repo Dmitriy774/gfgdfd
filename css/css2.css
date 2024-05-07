@@ -1,0 +1,127 @@
+@font-face {
+    font-family: "OpenSans";
+    src: url(../fonts/OpenSans.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "OpenSans";
+}
+
+:root{
+    --color-white: #fff;
+    --color-black: #000000;
+    --color-lite-gray: #79787A;
+}
+
+section nav ul a {
+    color: var(--color-white);
+    font-size: 20px;
+    padding: 10px;
+    position: relative;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+section nav ul {
+    column-gap: 4vw;
+    text-decoration: none;
+    padding-top: 2vw;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    padding: 1vw 10vw 10vw 10vw;
+}
+
+
+
+section.two{
+    justify-items: center;
+}
+
+
+main{
+    background-image: url(../image/2.png);
+    height: 300vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section.dt div.summer{
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    color: var(--color-white);
+    align-items: center;
+    padding: 1vw 10vw 1vw 10vw;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+section.dt div.summer h1{
+    font-size: 40px;
+}
+
+section.dt div.title a{
+    font-size: 24px;
+    text-decoration: none;
+    list-style: none;
+    border: rgb(99, 98, 98) 1px solid;
+    color: #79787A;
+
+}
+
+section.dt div.title{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 7vw;
+    padding: 0vw 10vw ;
+    padding-top: 30px;
+    border-radius: 10px;
+
+}
+
+
+
+section.dt nav.auto{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 0.2vw;
+    padding-left: 1vw;
+    display: grid;
+    padding-top: 50px;
+}
+
+section.dt nav.auto article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  section.dt nav.auto article a img {
+    width: 20vw;
+    height: auto; 
+    object-fit: cover;
+    column-gap: 1vw;
+    margin: 10px;
+    
+  }
+
+  section.dt nav.auto article:hover{
+    transform: scale(1.04);
+    transition: all 0.5s;
+  }
+
+hr{
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
